@@ -193,3 +193,30 @@ p {
     line-height: 1.6;
     margin-bottom: 10px;
 }
+
+/* Tableau Embed Container and Overlay */
+.tableau-container {
+  position: relative;
+  max-width: 100%; /* responsive width */
+  margin: 0 auto;
+}
+
+.toolbar-overlay {
+  position: absolute;
+  top: 0;       /* Adjust if needed */
+  right: 0;
+  width: 160px;  /* Approximate toolbar width */
+  height: 40px;  /* Approximate toolbar height */
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* allow clicks through */
+  z-index: 10;
+  border-bottom-left-radius: 6px;
+  user-select: none;
+  font-family: Arial, sans-serif;
+}
