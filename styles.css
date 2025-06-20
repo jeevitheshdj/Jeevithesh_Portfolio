@@ -203,20 +203,20 @@ p {
 
 .toolbar-overlay {
   position: absolute;
-  top: 0;       /* Adjust if needed */
-  right: 0;
-  width: 160px;  /* Approximate toolbar width */
-  height: 40px;  /* Approximate toolbar height */
-  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  left: 0;
+  width: 160px;
+  height: 40px;
+  background: #000000;  /* solid black, fully opaque */
   color: white;
   font-size: 12px;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none; /* allow clicks through */
+  pointer-events: none;
   z-index: 10;
-  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
   user-select: none;
-  font-family: Arial, sans-serif;
+  font-family: Times New Roman, sans-serif;
 }
